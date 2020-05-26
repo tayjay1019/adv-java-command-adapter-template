@@ -21,4 +21,6 @@ public class Broker {
     public void takeOrder(Order order) {
         orderList.add(order);
     }
+
+    public void undoOrder(Order order){ orderList.remove(order);}
 }

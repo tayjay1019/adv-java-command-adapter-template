@@ -16,4 +16,7 @@ public class SellStock implements Order {
     public void execute() {
         abcStock.sell();
     }
+
+    @Override
+    public void undo() {  abcStock.buy();   }
 }
